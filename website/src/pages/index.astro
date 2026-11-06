@@ -1,0 +1,767 @@
+
+---
+const services = [
+  {
+    number: '01',
+    title: 'Condition Assessment',
+    description: 'Understanding the condition of cultural objects through systematic examination, assessment and documentation.'
+  },
+  {
+    number: '02',
+    title: 'Preventive Conservation',
+    description: 'Identifying environmental and material risks and developing appropriate strategies to minimise deterioration.'
+  },
+  {
+    number: '03',
+    title: 'Conservation Consultancy',
+    description: 'Professional guidance on conservation requirements, treatment options, materials and ethical decision-making.'
+  },
+  {
+    number: '04',
+    title: 'Documentation & Research',
+    description: 'Scientific documentation, material studies and research-informed approaches to cultural heritage preservation.'
+  },
+  {
+    number: '05',
+    title: 'Training & Awareness',
+    description: 'Educational programmes and workshops promoting responsible heritage care and conservation awareness.'
+  },
+  {
+    number: '06',
+    title: 'Heritage Conservation',
+    description: 'Context-sensitive guidance for the understanding, care and long-term preservation of tangible cultural heritage.'
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f3ed" />
+  <meta
+    name="description"
+    content="Yoombi Conservation Consultancy — Professional art conservation, preventive conservation, heritage care and research in Manipur, India."
+  />
+  <title>Yoombi | Conservation Consultancy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#home" class="brand" aria-label="Yoombi homepage">
+      <img
+        src="/yoombi-logo.png"
+        alt="Yoombi Conservation Consultancy"
+      />
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Our Approach</a>
+      <a href="#contact" class="nav-contact">Get in touch ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          ART CONSERVATION · HERITAGE CARE · RESEARCH
+        </p>
+
+        <h1>
+          Preserving heritage.<br />
+          <em>Understanding materials.</em>
+        </h1>
+
+        <p class="hero-description">
+          Professional conservation consultancy dedicated to
+          the understanding, care and preservation of cultural heritage.
+        </p>
+
+        <a href="#services" class="primary-button">
+          Explore our services <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="hero-symbol" aria-hidden="true">
+        <img src="/yoombi-symbol.png" alt="" />
+      </div>
+
+      <div class="hero-bottom">
+        <span>MANIPUR · INDIA</span>
+        <span>KNOWLEDGE · CARE · RESPONSIBILITY</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="intro section" id="about">
+      <div class="section-label">01 / ABOUT YOOMBI</div>
+
+      <div class="intro-content">
+        <h2>
+          Conservation begins<br />
+          with <em>understanding.</em>
+        </h2>
+
+        <p>
+          Cultural heritage carries material histories, human experiences
+          and collective memories. Preserving it requires more than
+          technical intervention. It requires scientific understanding,
+          critical thinking and responsible decision-making.
+        </p>
+
+        <p>
+          Yoombi Conservation Consultancy is dedicated to providing
+          professional conservation guidance and supporting the
+          responsible care of cultural heritage, with an initial
+          focus on Manipur and Northeast India.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="section-label">02 / WHAT WE DO</div>
+
+      <div class="section-heading">
+        <h2>Our areas of <em>practice.</em></h2>
+        <p>
+          Informed approaches to the examination, understanding
+          and preservation of cultural heritage.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        {services.map((service) => (
+          <article class="service-card">
+            <span class="service-number">{service.number}</span>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="approach">
+      <div class="philosophy-inner">
+        <p class="eyebrow">03 / OUR PHILOSOPHY</p>
+
+        <h2>
+          Not every problem<br />
+          requires an <em>intervention.</em>
+        </h2>
+
+        <p>
+          Responsible conservation begins with careful observation,
+          scientific understanding and informed professional judgement.
+          Knowing when to intervene — and when not to — is equally important.
+        </p>
+
+        <div class="philosophy-line"></div>
+
+        <span class="philosophy-values">
+          OBSERVE · UNDERSTAND · EVALUATE · ACT RESPONSIBLY
+        </span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="section-label">04 / CONTACT</div>
+
+      <div class="contact-content">
+        <p class="eyebrow">LET'S TALK ABOUT HERITAGE</p>
+
+        <h2>
+          Every object has a history.<br />
+          <em>Let's care for it.</em>
+        </h2>
+
+        <p>
+          For conservation enquiries, professional consultation,
+          collaborations and educational initiatives,
+          get in touch with Yoombi.
+        </p>
+
+        <span class="contact-note">
+          Contact information will be published here shortly.
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img
+      src="/yoombi-symbol.png"
+      alt="Yoombi symbol"
+      class="footer-symbol"
+    />
+
+    <p class="footer-tagline">
+      Conservation begins with understanding.
+    </p>
+
+    <span class="footer-copyright">
+      © {new Date().getFullYear()} Yoombi Conservation Consultancy
+    </span>
+  </footer>
+</body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f5f3ed;
+    color: #252923;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :global(a) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  :global(img) {
+    max-width: 100%;
+  }
+
+  :global(:focus-visible) {
+    outline: 2px solid #354b3d;
+    outline-offset: 4px;
+  }
+
+  :global(h1),
+  :global(h2),
+  :global(h3) {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+
+  :global(em) {
+    font-weight: 400;
+    color: #354b3d;
+  }
+
+  /* HEADER */
+
+.header {
+  height: 90px;
+  min-height: 90px;
+  padding: 8px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #d8d6ca;
+}
+
+  .brand {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .brand img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 34px;
+    font-size: 12px;
+  }
+
+  nav a {
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: #73836c;
+  }
+
+  .nav-contact {
+    border: 1px solid #252923;
+    padding: 14px 20px;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .nav-contact:hover {
+    background: #354b3d;
+    color: white;
+  }
+
+  /* HERO */
+
+  .hero {
+  min-height: 0;
+  height: 620px;
+  padding: 25px 12% 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    color: #77796f;
+  }
+
+  .hero h1 {
+    font-size: clamp(46px, 6.3vw, 83px);
+    line-height: 1.13;
+    letter-spacing: -1.8px;
+    margin: 30px 0;
+  }
+
+  .hero-description {
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #77796f;
+    margin-bottom: 35px;
+  }
+
+  .primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 18px 24px;
+    background: #354b3d;
+    color: white;
+    font-size: 12px;
+    transition: background 0.2s ease;
+  }
+
+  .primary-button:hover {
+    background: #25372c;
+  }
+
+  .hero-symbol {
+    position: absolute;
+    right: 9%;
+    top: 25%;
+    width: min(24vw, 320px);
+    opacity: 0.09;
+    pointer-events: none;
+  }
+
+  .hero-symbol img {
+    display: block;
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+
+  .hero-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 12%;
+    right: 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #77796f;
+  }
+
+  /* SHARED SECTIONS */
+
+  .section {
+    padding: 110px 12%;
+    scroll-margin-top: 20px;
+  }
+
+  .section-label {
+    padding-top: 12px;
+  }
+
+  .intro,
+  .contact {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 60px;
+    background: #eae7dc;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .contact h2 {
+    font-size: clamp(38px, 4.5vw, 59px);
+    line-height: 1.2;
+    margin: 0 0 30px;
+  }
+
+  .intro-content p,
+  .section-heading p,
+  .contact-content > p:not(.eyebrow) {
+    max-width: 610px;
+    font-size: 14px;
+    line-height: 2;
+    color: #77796f;
+  }
+
+  .intro-content p + p {
+    margin-top: 22px;
+  }
+
+  /* SERVICES */
+
+  .services {
+    background: #f5f3ed;
+  }
+
+  .section-heading {
+    margin: 45px 0 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 35px;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+  }
+
+  .section-heading p {
+    max-width: 310px;
+    margin: 0;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #d8d6ca;
+    border-left: 1px solid #d8d6ca;
+  }
+
+  .service-card {
+    position: relative;
+    min-height: 270px;
+    padding: 30px;
+    border-right: 1px solid #d8d6ca;
+    border-bottom: 1px solid #d8d6ca;
+    transition: background 0.25s ease;
+  }
+
+  .service-card:hover {
+    background: #eae7dc;
+  }
+
+  .service-number {
+    font-size: 11px;
+    color: #77796f;
+  }
+
+  .service-arrow {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    color: #354b3d;
+  }
+
+  .service-card h3 {
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 48px 0 15px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #77796f;
+    margin: 0;
+  }
+
+  /* PHILOSOPHY */
+
+  .philosophy {
+    background: #354b3d;
+    color: #f5f3ed;
+    padding: 120px 12%;
+    scroll-margin-top: 20px;
+  }
+
+  .philosophy-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .philosophy .eyebrow {
+    color: #c4c9b9;
+  }
+
+  .philosophy h2 {
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 1.15;
+    margin: 35px 0;
+  }
+
+  .philosophy h2 em {
+    color: #d1d7c5;
+  }
+
+  .philosophy-inner > p:not(.eyebrow) {
+    max-width: 600px;
+    color: #d1d7c5;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .philosophy-line {
+    width: 65px;
+    height: 1px;
+    background: #c4c9b9;
+    margin: 50px 0 25px;
+  }
+
+  .philosophy-values {
+    font-size: 9px;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: #d1d7c5;
+  }
+
+  /* CONTACT */
+
+  .contact-note {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #77796f;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    min-height: 220px;
+    padding: 45px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: #f5f3ed;
+    text-align: center;
+    border-top: 1px solid #d8d6ca;
+  }
+
+  .footer-symbol {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  .footer-tagline {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #354b3d;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #77796f;
+    letter-spacing: 0.3px;
+  }
+
+  /* TABLETS */
+
+  @media (max-width: 1050px) {
+    .header {
+      padding: 20px 6%;
+    }
+
+    .brand {
+      width: 270px;
+    }
+
+    nav {
+      gap: 20px;
+    }
+
+    .service-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+
+    .hero-bottom {
+      left: 8%;
+      right: 8%;
+    }
+
+    .section,
+    .philosophy {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 700px) {
+    .header {
+      min-height: auto;
+      padding: 20px 6%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .brand {
+      width: 260px;
+      max-width: 100%;
+    }
+
+    nav {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 16px 20px;
+      font-size: 11px;
+    }
+
+    .nav-contact {
+      padding: 10px 13px;
+    }
+
+    .hero {
+      min-height: 640px;
+      padding: 85px 7% 100px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 10vw, 58px);
+      letter-spacing: -1px;
+    }
+
+    .hero-description {
+      font-size: 14px;
+    }
+
+    .hero-symbol {
+      right: -30px;
+      top: 42%;
+      width: 210px;
+      opacity: 0.055;
+    }
+
+    .hero-bottom {
+      left: 7%;
+      right: 7%;
+      flex-wrap: wrap;
+      font-size: 8px;
+      line-height: 1.7;
+    }
+
+    .section {
+      padding: 75px 7%;
+    }
+
+    .intro,
+    .contact {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .section-heading {
+      display: block;
+      margin: 35px 0 40px;
+    }
+
+    .section-heading p {
+      margin-top: 20px;
+    }
+
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card {
+      min-height: 220px;
+    }
+
+    .philosophy {
+      padding: 85px 7%;
+    }
+
+    .philosophy h2 {
+      font-size: clamp(39px, 9vw, 55px);
+    }
+
+    .footer {
+      padding: 45px 7%;
+      gap: 15px;
+    }
+
+    .footer-symbol {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+
+    .service-card,
+    .primary-button,
+    .nav-contact,
+    nav a {
+      transition: none;
+    }
+  }
+</style>
